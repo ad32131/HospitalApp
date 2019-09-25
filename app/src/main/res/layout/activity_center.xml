@@ -1,0 +1,165 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/title"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hbtn"
+            android:src="@drawable/home"
+
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cfbtn"
+            android:layout_toStartOf="@+id/cfbtn"
+            android:onClick="onClick"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cfbtn"
+            android:src="@drawable/setting"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="#ffffffff"
+        android:layout_above="@+id/botlinea"
+        android:layout_below="@+id/top"
+
+        >
+        <TextView
+
+            android:text="2011년 몇월"
+            android:textSize="20sp"
+            android:id="@+id/gv_calendar_activity_tv_title"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+
+            />
+        <GridView
+
+            android:id="@+id/gv_calendar_activity_gv_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="7"
+            android:listSelector="@drawable/gridview_selector"
+            android:layout_gravity="left"
+            android:layout_above="@+id/buta"
+            android:layout_below="@+id/gv_calendar_activity_tv_title"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/buta"
+            >
+
+        <Button
+            android:id="@+id/gv_calendar_activity_b_last"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pre_btn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="지난달"  />
+        <Button
+            android:id="@+id/gv_calendar_activity_b_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다음달"
+            android:background="@drawable/nex_btn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/botlinea"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/lbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/in_qr2"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/cbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cen_app"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbtn"
+            android:background="@drawable/r_btn2"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

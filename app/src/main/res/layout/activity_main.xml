@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/title"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hbtn"
+            android:src="@drawable/home"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cfbtn"
+            android:layout_toStartOf="@+id/cfbtn"
+            android:onClick="onClick"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cfbtn"
+            android:src="@drawable/setting"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/s3"
+            android:background="@drawable/s_off"
+            android:onClick="onClick"
+            />
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/s3"
+            android:layout_marginTop="5dp"
+            android:id="@+id/s2"
+            android:background="@drawable/s_off"
+            android:onClick="onClick"
+            />
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/s2"
+            android:layout_marginTop="5dp"
+            android:id="@+id/s1"
+            android:background="@drawable/s_off"
+            android:onClick="onClick"
+            />
+
+        <ViewFlipper
+            android:layout_height="fill_parent"
+            android:id="@+id/viewFlipper1"
+            android:layout_width="fill_parent"
+            android:flipInterval="1000"
+            >
+            <WebView
+                android:id="@+id/sqkweb1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"/>
+            <WebView
+                android:id="@+id/sqkweb2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"/>
+            <WebView
+                android:id="@+id/sqkweb3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+
+        </ViewFlipper>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Lin1"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/lbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/in_qr"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/cbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cen_app"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rbtn"
+            android:background="@drawable/r_btn"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

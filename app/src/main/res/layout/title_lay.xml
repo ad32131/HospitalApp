@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF86AEF2"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이사랑
+소아청소년과의원"
+        android:id="@+id/textView1"
+
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 부모님은 사랑으로 아이들을 키우시고, 아이사랑의원은 예방과 치료로 키웁니다
+   0세부터 100세까지 아이사랑의원은 온가족의 평생건강지킴이가 되겠습니다"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+      android:gravity="center"
+
+        />
+</RelativeLayout>

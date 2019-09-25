@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_weight="5"
+        android:background="@drawable/title"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hbtn"
+            android:src="@drawable/hbtn"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cfbtn"
+            android:layout_toStartOf="@+id/cfbtn"
+            android:onClick="onClick"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cfbtn"
+            android:src="@drawable/cfbtn"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClick"
+            />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="@drawable/chat_back"
+
+        >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+                      >
+        </ListView>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tr"
+            android:adjustViewBounds="true"
+            android:layout_gravity="bottom"
+            android:scaleType="fitEnd"
+
+            >
+
+
+
+
+
+            <ImageView
+            android:id="@+id/pic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+            android:onClick="onClick"
+                android:scaleType="fitEnd"
+            android:background="@drawable/cam"
+            android:adjustViewBounds="true"
+                />
+
+
+
+
+
+            <EditText
+                android:id="@+id/msg_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:layout_weight="0.7"
+                android:background="@drawable/chat_cen"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:id="@+id/ack_btn"
+                android:background="@drawable/trans"
+                android:scaleType="fitEnd"
+                android:onClick="onClick"
+                />
+
+        </TableRow>
+
+
+
+    </FrameLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF86AEF2"
+        android:layout_gravity="bottom"
+        android:adjustViewBounds="true"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbtn"
+            android:src="@drawable/lbtn"
+            android:onClick="onClick"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbtn"
+            android:src="@drawable/cbtn"
+            android:onClick="onClick"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn"
+            android:src="@drawable/rbtn"
+            android:onClick="onClick"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            />
+
+
+
+
+    </TableRow>
+
+
+
+
+</LinearLayout>
+

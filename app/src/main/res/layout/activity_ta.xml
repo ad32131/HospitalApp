@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="@drawable/chat_back"
+        android:id="@+id/ratlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/title"
+            android:id="@+id/ratlly"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hbtn"
+                android:src="@drawable/home"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/cfbtn"
+                android:layout_toStartOf="@+id/cfbtn"
+                android:onClick="onClick"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cfbtn"
+                android:src="@drawable/setting"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClick"
+                />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/ratlly"
+            android:layout_above="@+id/tr"
+            android:layout_marginBottom="30dp"
+            android:dividerHeight="0px"
+            android:divider="#ffffff"
+                      >
+        </ListView>
+
+        <SlidingDrawer
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:id="@+id/sdme"
+            android:animateOnClick="true"
+            android:allowSingleTap="true"
+            android:content="@+id/content"
+            android:handle="@+id/sba"
+            android:orientation="vertical"
+            android:layout_above="@+id/tr"
+            >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/sba"
+            android:background="@drawable/obtn"
+            android:layout_above="@+id/tr"
+            android:onClick="onClick"
+           />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/content"
+                >
+
+
+
+
+                <ImageView
+                    android:id="@+id/lbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/in_qr"
+                    android:onClick="onClick"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/cbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cen_app2"
+                    android:onClick="onClick"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rbtn"
+                    android:background="@drawable/r_btn2"
+                    android:onClick="onClick"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+        </SlidingDrawer>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tr"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/bt_1"
+                android:onClick="onClick"
+                >
+
+
+                <ImageView
+                    android:id="@+id/pic_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cam"
+                    android:layout_alignParentLeft="true"
+                    />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/msg_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/chat_cen"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:layout_toRightOf="@+id/pic_btn"
+                    android:layout_toLeftOf="@+id/ack_btn"
+                    android:onClick="onClick"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ack_btn"
+                    android:background="@drawable/trans"
+                    android:onClick="onClick"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+

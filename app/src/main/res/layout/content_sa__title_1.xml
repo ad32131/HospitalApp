@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF86AEF2"
+    >
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="진료내용"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인사말 : 소아과의 명칭이 소아청소년과로 바뀐지도 벌써 9년이 되었지만 아직도 소아청소년과라고 하면 아이들만 진료하는 병원으로 생각하시는 분들이 많습니다. 저희 소아청소년과 전문의들은 의사로서 모든 기본 소양을 습득한 후, 특히 소아청소년과에 집중 수련을 한 의사들입니다. 0세부터 100세까지 온 가족의 평생주치의가 되고자 하는 마음가짐으로, 늘 여러분과 가까이에서 보다 편리하고 정확한 진료를 제공하겠습니다."
+            android:layout_centerInParent="true"
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 진료시간"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평일 오전 9시~오후 7시
+토요일 오전9시~오후3시
+점심시간 오후1시~오후2시
+(공휴일, 일요일 휴진)"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="약력"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView6"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - ㅇㅇ대학교 의과대학
+      - ㅇㅇ대학병원 소아청소년과 전공의 수료
+      - 대한소아과학회 정회원
+      - 대한소아소화기영양학회 정회원
+      - 대한소아알레르기호흡기학회 정회원
+      - 대한신생아학회 정회원
+      - 아이사랑소아청소년과의원 "
+            android:layout_centerInParent="true"
+            android:id="@+id/textView7"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView6"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원장"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView8"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/textView7"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imtitle"
+            android:layout_below="@+id/textView8"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* 진료안내
+      진료시간 : 평일 오전 9시~오후 7시 / 토요일 오전9시~오후3시 / 점심시간 오후1시~오후2시(공휴일, 일요일 휴진)
+      진료내용 : 예방접종·소화기질환·호흡기질환·소아피부질환·영유아건강검진·아토피·알레르기·성장클리닉
+      서울특별시 은평구 은평로 13"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_below="@+id/imtitle"
+            />
+
+    </RelativeLayout>
+
+        </ScrollView>
+
+
+
